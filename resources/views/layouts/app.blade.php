@@ -7,13 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 
-  <!-- Includiamo gli assets con la direttiva vite -->
+  <!-- direttive di vite in tutte le pagine che usano questo file -->
   @vite('resources/js/app.js')
 </head>
 
 <body>
   @include('partials.header') 
   <main>
+    {{-- dove verrà inserito il file della pagina che lo importa --}}
     @yield('content')
   </main>
 
